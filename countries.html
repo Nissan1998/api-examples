@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Countries Details</title>
+    <style>
+        .onCountry{
+            border: solid tomato;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="text-2xl font-bold text-center">All Countries</h1>
+    <h1 class="text-2xl font-bold text-center underline mb-10">All Countries</h1>
+    <button onclick="loadCountries()" class="font-bold px-10 bg-teal-400 py-2 flex mx-auto  mb-20 items-center ">See Countries</button>
 
+   <main class="">
+    <section id="country-detail" class=" flex flex-col justify-center items-center w-60 mx-auto text-center mb-10">
+        
+    </section>
     <section>
-        <div id="all-countries">
-            
+        <div id="all-countries" class="grid md:grid-cols-3 gap-16 text-center bg-red-50 md:px-52">
+
         </div>
     </section>
+   
+   </main>
+    
 
     <script src="./JS/countries.js"></script>
 </body>
